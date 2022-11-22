@@ -63,3 +63,74 @@ body {
 .sidebar button > span > span {
     transition: 0.3s;
 }
+.sidebar button i {
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+}
+.sidebar button img {
+    width: 28px;
+    height: 28px;
+    transition: 0.2s;
+}
+.sidebar button i > span {
+    display: grid;
+    place-items: center;
+    height: 20px;
+    padding: 0 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    border: 1px solid #ffffff;
+    background: #ff2f40;
+    color: #f9f9f9;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+}
+.sidebar button i > em {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 2px;
+    right: -1px;
+    border: 1px solid #ffffff;
+    background: #ff2f40;
+    color: #f9f9f9;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+}
+.sidebar button span {
+    font-size: 17px;
+}
+.sidebar > nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sidebar > nav button:last-child {
+    margin-top: auto;
+}
+@media (width < 580px) {
+    .log-img {
+        display: none;
+    }
+    .logo-icon {
+        display: block;
+    }
+    .sidebar {
+        width: 72px;
+    }
+    .sidebar button > span {
+        width: 50%;
+    }
+    .sidebar button > span > span {
+        opacity: 0; 
+        visibility: hidden;
+    }
+}
